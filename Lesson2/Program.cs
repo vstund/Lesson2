@@ -76,9 +76,23 @@ namespace Lesson2
             S = Math.Round(a * b, 2);
             Console.WriteLine($"Taisnstūra laukums ir {S}");
 
+            //-------------------------------------------------------------------------------------
 
+            
+            Console.WriteLine("Ievadi vienādsānu trijstūra pamatnes garumu:");
+            string acTxt = Console.ReadLine();
+            double ac = double.Parse(acTxt);
+            Console.WriteLine("Ievadi trijstūra augstumu:");
+            string hTxt = Console.ReadLine();
+            double h = double.Parse(hTxt);
+            double abcS = ac*h/2;
+            Console.WriteLine($"Trijstūra abc laukums ir {abcS}");
 
-
+            Console.WriteLine("Ja bija domāts vienādmalu trijstūris, tad ievadi malas garumu:");
+            string abcTxt = Console.ReadLine();
+            double abc = double.Parse(abcTxt);
+            double abcS2 = abc*abc*Math.Sqrt(3)/4;
+            Console.WriteLine($"Vienādmalu Trijstūra abc laukums ir {abcS2}");
 
 
 
