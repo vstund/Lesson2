@@ -28,7 +28,8 @@ namespace Lesson2
             string number2Txt = Console.ReadLine();
             int number2 = int.Parse(number2Txt);
             int numberMax = Math.Max(number1, number2);
-            Console.WriteLine($"{numberMax} ir lielākais skaitlis!");
+            string maxOutput = String.Format("Starp skaitļiem {0} un {1}, lielākais ir {2}!", number1, number2, numberMax);
+            Console.WriteLine(maxOutput);
 
             //---------------------------------------------------------------------------------------
 
@@ -78,25 +79,29 @@ namespace Lesson2
 
             //-------------------------------------------------------------------------------------
 
-            
             Console.WriteLine("Ievadi vienādsānu trijstūra pamatnes garumu:");
             string acTxt = Console.ReadLine();
             double ac = double.Parse(acTxt);
             Console.WriteLine("Ievadi trijstūra augstumu:");
             string hTxt = Console.ReadLine();
             double h = double.Parse(hTxt);
-            double abcS = ac*h/2;
+            double abcS = ac * h / 2;
             Console.WriteLine($"Trijstūra abc laukums ir {abcS}");
-
+            // Otrs variants
             Console.WriteLine("Ja bija domāts vienādmalu trijstūris, tad ievadi malas garumu:");
             string abcTxt = Console.ReadLine();
             double abc = double.Parse(abcTxt);
-            double abcS2 = abc*abc*Math.Sqrt(3)/4;
+            double abcS2 = abc * abc * Math.Sqrt(3) / 4;
             Console.WriteLine($"Vienādmalu Trijstūra abc laukums ir {abcS2}");
 
+            //-------------------------------------------------------------------------------------
 
-
-
+            Console.WriteLine("Kāds ir tavs vārds?");
+            string userName = Console.ReadLine();
+            Console.WriteLine("Kāds ir tavs vecums?");
+            string userAgeTxt = Console.ReadLine();
+            int userAge = int.Parse(userAgeTxt);
+            Console.WriteLine($"Sveiks {userName}! Tavs vecumr ir {userAge}");
         }
     }
 }
